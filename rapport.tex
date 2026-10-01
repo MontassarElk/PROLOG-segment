@@ -6,7 +6,6 @@
 \usepackage[utf8]{inputenc}
 \usepackage[french]{babel}
 \usepackage{lmodern}
-\usepackage[T1]{fontenc}
 \usepackage{amsmath,amsfonts,amsthm,amssymb}
 \usepackage{graphicx}
 \usepackage{textcomp}
@@ -29,28 +28,8 @@
 \newpage
 \flushleft
 \par{
-\section{Introduction}
-Le travail sur Prolog a été beaucoup plus compliqué que prévu.on a rencontré beaucoup de difficulté pour apprendre le langage. on a toujours des problème avec ce langage au niveau du syntaxe , même après avoir fait ce travail, on est pas alaise a jouer avec le code peut être car on est pas habituer a coder avec les langages Logic ,et  qu'on l'utiliserai pas dans la vie courante. \\*[1mm]
-Afin de se faciliter la tâche, nous avons séparer les tâches en deux. Qu'un s'occupe de check, et que l'autre s'occupe de elaborate. Puisqu'il est mieux que les deux soient indépendants, cette façon de procéder aide à conserver l'intégrité et de gagner plus de temps .
-\section {Apprentissage du language Prolog}
-honnêtement je peux pas dire que j'ai bien appris prolog , l'implémentation de la programmation logique complexe demande de l'expérience et d'attention c'est vrai qu'il y a des solution simple et plus souvent correcte qu’une solution complexe. donc c'est pour ça on a passé des heures sur ipn Swi prolog, et regarder les capsules du cours 3 et 4 fois pour comprendre et maîtriser le syntaxe du langage par contre on peut dire qu'on a eu une base d'un langage de programmation logique .
-\section {Compréhension du travail}
-cette partie de travail nous a pris quand même une bonne période pour relire le tp et de regarder le capsule pour un minimum de 4 fois et ce qui nous apparaît plus difficile c'est l'analyse du code source et de comprendre qu'est-ce qu'on va utiliser pour implementer la partie a compléter .
 \section {Verificateur Check}
 On respectant les règles de typage donné a l’énonce du tp commencent avec la vérification du type int donc l’implémentation ça se fait avec l'appel récursive de la fonction check qui prend ses sous règles qui prend n'importe quelle variable n de l’environnent de type Gamma   et doit retourner un number avec la sous règle (conclusion de l'hypothese) nummber(N) , donc il suffit de traduire les règles d'inferences dans la donnée du tp2 en Prolog. Cette partie à été compléter mais nous avons pas eu pour tester l'inference de type pour les macrosdonc on a appliquer le meme principe pour les autres regles de typage par contre on a eu de difficultés dans l'implementation 
 le tfn qui est utliser pour decrire la fonction identité polymorphique parcque dans les langages statiquement typé comme haskell on a une fonction de int -> int et aucune chance de lui passer un autre type comme boolean par contre on peut avoir des variante polymorphique avec tfn et le type deviendrait forall A, A -> A par exemple si on a une fonction identité definie par (lambda(x) x) alors pour le polymorphisme c'est (Lambda (A) (Lambda (x:A) x))  donc le (Lambda (A)) c'est le tfn 
 et pour l'inference de type pour le tapp c'est l'application d'une tfn donc si on applique 0 a identitee on applique dhabord identitee sur le type inst donc ca devient ((tapp tfn (A, fn(x,x)),A),x) mais le tfn et tapp c'est implicite donc on fait ca avec la partie elaborate (macros style)
- 
-
-
-\section{elaborate }
-Tout au long du tp2, la partie qui nous a pris énormément de temps et de réflexion c'est la partie de l'élaboration.
-En effet elle compte 3 sous tâches qui sont l'élaboration de macro,  l'élimination du sucre syntaxique et le paramètre de type  
-En ce qui concerne les appels de fonction cette tâches à été bien réussi. Nous nous sommes rappeller du tp1 de comment on utilisait la récursivité pour traiter les Lcall.
-Concernant le paramètres de type nous avons coder et tester. Nous l'avons aussi réussi. 
-La partie manque de l'élaboration est l'expansion de macro,  nous avons pas eu assez de temps pour le completer à temps.
-
-%% remplir ici
-\section{Conclusion}
-Cet expérience fût intéressante. Nous avons appris beaucoup sur la programmation logique, mais le langage prolog n'est pas favori d'un très grand nombre de développeurs et par nous aussi comparé à d'autres langages utilisé dans la vie comme java python .... %%remplir plus ici
-\end{document}
+ \end{document}
